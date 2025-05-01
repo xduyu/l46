@@ -1,0 +1,203 @@
+.grettings {
+    background: url(../../img/grettings/Rectangle\ 341.png) no-repeat center/cover;
+    padding-top: 51px;
+}
+
+.container {}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 75px;
+    padding: 16px 12px 10px 21px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+.header__content {
+    display: flex;
+    column-gap: 73px;
+    align-items: center;
+}
+
+.logo {}
+
+.logo__link {
+    color: black;
+    font-family: "Source Code Pro", serif;
+    font-family: 400;
+    font-size: 25px;
+}
+
+.logo span:first-child {
+    color: #38BFF2;
+}
+
+.logo span:last-child {
+    color: #F15525;
+}
+
+.nav {}
+
+.nav__list {
+    display: flex;
+    column-gap: 41px;
+}
+
+.nav__item a,
+.header__sign-up {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 104%;
+    color: #22235b;
+}
+
+.header__btn-block {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.header__sign-up {}
+
+.header__log-in {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 104%;
+    color: white;
+    background-color: #38BFF2;
+    padding: 6px 15px 8px 15px;
+    border-radius: 34px
+}
+
+.header__log-in::before {
+    content: '';
+    background-image: url(../../img/grettings/Group\ 2.svg);
+    width: 9px;
+    height: 7px;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.desc {
+    display: flex;
+    margin-top: 109px;
+    align-items: center;
+}
+
+.desc__info {}
+
+.desc__title {
+    font-weight: 500;
+    font-size: clamp(1.5rem, 1.193rem + 1.401vi, 2.875rem);
+    line-height: 100%;
+    color: #22235b;
+}
+
+
+.desc__title span {
+    color: #F15525;
+}
+
+.desc__prog {
+    font-family: 'Gilroy-SemiBold', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #22235b !important;
+}
+
+.desc__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 144%;
+    color: #22235b;
+    max-width: 365px;
+    border-top: 1px solid #DEDEDE;
+    margin-top: 32px;
+    padding-top: 39px;
+}
+
+.test {
+    margin-top: 70px;
+    max-width: 325px;
+}
+
+.test__link {
+    padding: 27px 50px 28px 46px;
+    background-color: #F15525;
+    border-radius: 82px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 97%;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.test__link::after {
+    content: '';
+    background-image: url(../../img/grettings/Arrow\ 1.svg);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.burger-menu__line {
+    width: 17px;
+    height: 2px;
+    background-color: #F15525;
+    border-radius: 21px;
+}
+
+@media(max-width: 870px) {
+    .nav {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
+
+@media(max-width:500px) {
+    .header__sign-up {
+        display: none;
+    }
+}
+
+@media(max-width:1300px) {
+    .desc {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desc__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desc__text {
+        margin-top: 20px;
+        padding-top: 24px;
+    }
+
+    .test {
+        margin-top: 24px;
+    }
+}

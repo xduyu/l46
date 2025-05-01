@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular';
+}
+
+body,
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 11px;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}

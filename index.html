@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="grettings">
+            <div class="container">
+                <header class="header">
+                    <div class="header__content">
+                        <div class="logo">
+                            <a href="#" class="logo__link"><span>Y</span>t<span>Y</span>t</a>
+                        </div>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a href="#">Чему вы научитесь</a></li>
+                                <li class="nav__item"><a href="#">Процесс обучения</a></li>
+                                <li class="nav__item"><a href="#">Стоимость</a></li>
+                                <li class="nav__item"><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__btn-block">
+                        <a href="#" class="header__sign-up">Регистрация</a>
+                        <a href="#" class="header__log-in">Войти</a>
+                    </div>
+                    <ul class="burger-menu">
+                        <li class="burger-menu__line"></li>
+                        <li class="burger-menu__line"></li>
+                        <li class="burger-menu__line"></li>
+                    </ul>
+                </header>
+                <div class="desc">
+                    <div class="desc__info">
+                        <div class="desc__title">
+                            школа <span>{</span><span class="desc__prog">программирования</span><span>}</span> для тех,
+                            кому нужны реальные навыки, а не
+                            просто сертификат
+                        </div>
+                        <div class="desc__text">пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам
+                        </div>
+                        <div class="test" id="test-start">
+                            <a href="#" class="test__link">Пройти тестирование</a>
+                        </div>
+                    </div>
+                    <img src="img/grettings/Group 1242.png" alt="компьютер">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="wrapper-menu">
+        <img src="img/grettings/menu-close.svg" alt="" class="wrapper-menu__close">
+        <ul class="menu">
+            <li class="menu__item"><a href="#">Чему вы научитесь</a></li>
+            <li class="menu__item"><a href="#">Процесс обучения</a></li>
+            <li class="menu__item"><a href="#">Стоимость</a></li>
+            <li class="menu__item"><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+
+
+    <div class="modal-test">
+        <div class="test-block">
+            <div class="test__btn-close">&times;</div>
+            <div class="container">
+                <div class="test__content">
+                    <div class="test__title">Перед тем, как приступить к обучению, необходимо пройти небольшой тест
+                    </div>
+                    <div class="test__text">Тест состоит из 4 заданий на логическое мышление и прочие навыки,
+                        необходимые программисту. Задания не самые простые. Но
+                        ни в коем случае не выбирайте ответы наугад. Если вы не можете дать правильный ответ – выбирайте
+                        пункт «Не знаю».</div>
+                    
+                    <div class="test__question" style="display: none;"></div>
+                    <div class="test__answers" style="display: none;">
+                        <label>
+                            <input name="answer" type="radio" class="variant test_variant1"><span></span>
+                        </label>
+                        <label>
+                            <input name="answer" type="radio" class="variant test_variant2"><span></span>
+                        </label>
+                        <label>
+                            <input name="answer" type="radio" class="variant test_variant3"><span></span>
+                        </label>
+                        <label>
+                            <input name="answer" type="radio" class="variant test_variant4"><span></span>
+                        </label>
+                    </div>
+                    
+                    <div class="test test__btn">
+                        <a href="#" class="test__link">Начать тест</a>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/menu.js"></script>
+    <script src="js/test.js"></script>
+</body>
+
+</html>
